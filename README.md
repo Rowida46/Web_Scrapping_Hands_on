@@ -10,7 +10,7 @@
 
 Overview and installation
 
-```
+```console
 pip install requests
 ```
 
@@ -23,7 +23,7 @@ Beautiful Soup automatically converts incoming documents to __Unicode__ and outg
 
 Overview and installation
 
-```
+```console
 pip install beautifulsoup4
 ```
 
@@ -35,7 +35,7 @@ Selenium is a Python library originally made for automated testing of web applic
 
 Overview and installation
 
-```
+```console
 pip install selenium
 ```
 
@@ -50,7 +50,8 @@ pip install selenium
 
 
 Overview and installation
-```
+
+```console
 pip install urllib
 ```
 
