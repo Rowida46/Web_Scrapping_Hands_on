@@ -4,7 +4,8 @@
 
 ## Requests
 
-[Requests](https://docs.python-requests.org/en/master/)is the most straightforward HTTP library that provide/ allow `Post` and `Get` HTTP as it allows the user to sent requests to the HTTP server and GET response back in the form of HTML or JSON response. It also allows the user to send POST requests to the server to modify or add some content.
+<img width = 150 align= "left" src= "https://docs.python-requests.org/en/latest/_static/requests-sidebar.png">
+[Requests](https://docs.python-requests.org/en/master/) is the most straightforward HTTP library that supports the entire restful API with all its methods (`PUT`, `GET`, `DELETE`, and `POST`). It allows the user to sent requests to the HTTP server and GET response back in the form of HTML or JSON response. It also allows the user to send POST requests to the server to modify or add some content.
 
 Overview and installation
 
@@ -13,13 +14,19 @@ pip install requests
 
 ```
 
+
+
 ## Beautiful
 
 <img width = 150 align= "left" src ="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/ws3.png">
-Beautiful Soup automatically converts incoming documents to __Unicode__ and outgoing documents to __UTF-8__.
+Beautiful Soup automatically converts incoming documents to __Unicode__ and outgoing documents to **UTF-8**.
 
 Overview and installation
 
+```
+pip install beautifulsoup4
+
+```
 
 
 ## Selenuim
@@ -29,7 +36,26 @@ Selenium is a Python library originally made for automated testing of web applic
 
 Overview and installation
 
+```
+pip install selenium
 
+```
+
+## Urllib
+
+	[Urllib](https://docs.python.org/3/library/urllib.html) Urllib is a Python library that allows the developer to open and parse information from HTTP or FTP protocols. Urllib offers some functionality to deal with and open URLs, namely:
+
+	- `urllib.request`: opens and reads URLs.
+	- `urllib.error`: catches the exceptions raised by urllib.request.
+	- `urllib.parse`: parses URLs.
+	- `urllib.robotparser` : parses robots.txt files.
+
+
+Overview and installation
+```
+pip install urllib
+
+```
 
 ## Scrapy
 
@@ -40,6 +66,8 @@ Try to avoid using Scrapy if you have a small project or you want to scrape one 
 
 
 ## Resources 
+
+- [Python-urllib-module eeks4geeks](https://www.geeksforgeeks.org/python-urllib-module/)
 
 - [5 Popular Python Libraries to Perform Web Scraping](https://www.analyticsvidhya.com/blog/2020/04/5-popular-python-libraries-web-scraping/)
 
