@@ -5,13 +5,13 @@
 ## Requests
 
 <img width = 150 align= "left" src= "https://docs.python-requests.org/en/latest/_static/requests-sidebar.png">
-[Requests](https://docs.python-requests.org/en/master/) is the most straightforward HTTP library that supports the entire restful API with all its methods (`PUT`, `GET`, `DELETE`, and `POST`). It allows the user to sent requests to the HTTP server and GET response back in the form of HTML or JSON response. It also allows the user to send POST requests to the server to modify or add some content.
+
+[Requests](https://docs.python-requests.org/en/master/) is the most straightforward HTTP library that supports the entire restful API with all its methods `PUT`, `GET`, `DELETE`, and `POST`. It allows the user to sent requests to the HTTP server and GET response back in the form of HTML or JSON response. It also allows the user to send POST requests to the server to modify or add some content.
 
 Overview and installation
 
 ```
 pip install requests
-
 ```
 
 
@@ -25,7 +25,6 @@ Overview and installation
 
 ```
 pip install beautifulsoup4
-
 ```
 
 
@@ -38,23 +37,21 @@ Overview and installation
 
 ```
 pip install selenium
-
 ```
 
 ## Urllib
 
-	[Urllib](https://docs.python.org/3/library/urllib.html) Urllib is a Python library that allows the developer to open and parse information from HTTP or FTP protocols. Urllib offers some functionality to deal with and open URLs, namely:
+[Urllib](https://docs.python.org/3/library/urllib.html) Urllib is a Python library that allows the developer to open and parse information from HTTP or FTP protocols. Urllib offers some functionality to deal with and open URLs, namely:
 
-	- `urllib.request`: opens and reads URLs.
-	- `urllib.error`: catches the exceptions raised by urllib.request.
-	- `urllib.parse`: parses URLs.
-	- `urllib.robotparser` : parses robots.txt files.
+- `urllib.request`: opens and reads URLs.
+- `urllib.error`: catches the exceptions raised by urllib.request.
+- `urllib.parse`: parses URLs.
+- `urllib.robotparser` : parses robots.txt files.
 
 
 Overview and installation
 ```
 pip install urllib
-
 ```
 
 ## Scrapy
