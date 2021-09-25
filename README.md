@@ -1,5 +1,13 @@
 
 
+# Broad Summary 
+
+- [*Requests*](#Request)
+- [*Beautiful*](#Beautiful)
+- [*Selenuim*](#Selenuim)
+- [*Urllib*](#Urllib)
+- [*Scrapy*](#Scrapy)
+
 
 
 ## Requests
@@ -7,7 +15,6 @@
 <img width = 150 align= "left" src= "https://docs.python-requests.org/en/latest/_static/requests-sidebar.png">
 
 [Requests](https://docs.python-requests.org/en/master/) is the most straightforward HTTP library that supports the entire restful API with all its methods `PUT`, `GET`, `DELETE`, and `POST`. It allows the user to sent requests to the HTTP server and GET response back in the form of HTML or JSON response. It also allows the user to send POST requests to the server to modify or add some content.
-
 
 It's a good idea to maintaine and use __web scraping seesion__ with requests, to persist the cookies and other parameters. It can result into a performance improvment and reuses the underlying TCP connection to a host.
 
@@ -49,7 +56,7 @@ data = """
 		<li class ="item"> l2 </li>
 		<li class ="item"> l3 </li>
 	</ul>
-"""
+   """
 soup = BeautifulSoup(data , 'html.parser')
 
 for l in soup.select("li.item"):
@@ -82,6 +89,7 @@ pip install selenium
 ```
 However, you need additional drivers for it to be able to interface with a chosen web browser.
 
+
 ## Urllib
 
 [Urllib](https://docs.python.org/3/library/urllib.html) Urllib is a Python library that allows the developer to open and parse information from HTTP or FTP protocols. Urllib offers some functionality to deal with and open URLs, namely:
@@ -91,12 +99,29 @@ However, you need additional drivers for it to be able to interface with a chose
 - `urllib.parse`: parses URLs.
 - `urllib.robotparser` : parses robots.txt files.
 
+*HTTP Get*
+```python
+import urllib.request as req ## it returns a file like obj
+response = req.urlopen("https://stackoverflow.com/documentation/")
+print(response.code)
+print(response.read())
+```
+*HTTP Post with parameters*
+
+```python
+query_param = {"usename" : "stackoverflow" , "password" : "me.em"}
+query_encode = urllib.parse.urlencode(query_param).encode('utf8')
+response_param = req.urlopen("https://stackoverflow.com/users/login" ,query_encode)
+print(response_param.code)
+```
+
 
 Overview and installation
 
 ```console
 pip install urllib
 ```
+
 
 ## Scrapy
 
